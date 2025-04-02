@@ -23,8 +23,6 @@ if not api_key:
 # llm = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
 llm_model = genai.GenerativeModel("gemini-pro")
 
-
-
 # Test the setup 
 # response = llm.invoke("Hello! Are you working?") 
 response = llm_model.generate_content("Hello! Are you working?")
